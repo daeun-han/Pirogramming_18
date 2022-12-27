@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+
+ol, ul {
+    list-style: none;
+    padding: 0;
+}
+
+body{
+    margin: 0;
+}
+
+h1{
+    font-weight: normal;
+    margin: 0;
+}
+
+body{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    height: 100vh;
+    align-items: center;
+
+    background-image: url("https://search.pstatic.net/sunny/?src=https%3A%2F%2Fthumb2.gettyimageskorea.com%2Fimage_preview%2F700%2F202210%2FISI%2F1433043103.jpg&type=a340");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color:darkgoldenrod;
+    font-family: 'Jua', sans-serif;
+}
+
+#overlay {
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    opacity: 0.5;
+    z-index: -1;
+}
+
+main h1{
+    color: white;
+}
+
+h1{
+    font-size: 36px;
+}
+
+#countdown {
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+}
+
+.box{
+    margin: 0 10px;
+    font-size: 24px;
+    background-color: white;
+    padding: 36px;
+    border-radius: 40px;
+}
+
+.box span {
+    display: block;
+    font-size: 72px;
+}
+
+#goals{
+    background-color: white;
+    padding: 50px 60px;
+    border-radius: 40px;
+}
+
+#goals li{
+    font-size: 24px;
+    margin: 20px 0;
+    text-decoration: underline;
+    text-decoration-style: wavy;
+    text-underline-offset: 10px;
+    text-decoration-color: olive;
+}
+
+#goals i{
+    margin-right: 10px;
+    color: olive;
+}
+
+#goals ul{
+    margin-top: 55px;
+    width: max-content;
+}
