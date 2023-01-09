@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Piro18 JS</title>
+		<link
+			rel="stylesheet"
+			as="style"
+			crossorigin
+			href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.4/dist/web/static/pretendard.css"
+		/>
+	</head>
+	<body>
+		<ul class="container">
+			<li>
+				<img
+					src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Apple_logo_black.svg/488px-Apple_logo_black.svg.png"
+					alt="apple logo"
+				/>
+			</li>
+			<li>
+				<img
+					src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Apple_logo_black.svg/488px-Apple_logo_black.svg.png"
+					alt="apple logo"
+				/>
+			</li>
+			<li>
+				<img
+					src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Apple_logo_black.svg/488px-Apple_logo_black.svg.png"
+					alt="apple logo"
+				/>
+			</li>
+			<li>
+				<img
+					src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Apple_logo_black.svg/488px-Apple_logo_black.svg.png"
+					alt="apple logo"
+				/>
+			</li>
+			<li>
+				<img
+					src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Apple_logo_black.svg/488px-Apple_logo_black.svg.png"
+					alt="apple logo"
+				/>
+			</li>
+		</ul>
+		<div class="observed-bottom"></div>
+
+		<script>
+			const options = {
+				rootMargin: '300px',
+				threshold: 0,
+			}
+
+			const $container = document.querySelector('.container')
+			const $item = $container.firstElementChild
+
+			const observer = new IntersectionObserver(() => {
+				$container.appendChild($item.cloneNode(true))
+			}, options)
+
+			const $observedBottom = document.querySelector('.observed-bottom')
+			observer.observe($observedBottom)
+		</script>
+
+		<style>
+			.container {
+				padding: 48px 0;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+				gap: 36px;
+			}
+
+			/* global */
+
+			* {
+				font-family: 'Noto Sans KR', sans-serif;
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+				-webkit-touch-callout: none;
+				-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+			}
+
+			h1,
+			h2,
+			h3,
+			h4,
+			h5,
+			h6 {
+				font-weight: normal;
+			}
+
+			button {
+				background-color: rgba(0, 0, 0, 0);
+				border: none;
+				cursor: pointer;
+				outline: none;
+			}
+
+			ul,
+			ol {
+				list-style: none;
+			}
+
+			a,
+			a:hover,
+			a:visited {
+				text-decoration: none;
+				color: inherit;
+			}
+
+			.dp-none {
+				display: none !important;
+			}
+		</style>
+	</body>
+</html>
